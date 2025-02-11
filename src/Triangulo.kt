@@ -1,4 +1,4 @@
-class Triangulo(val base: Double, val altura: Double, val lado1: Double, val lado2: Double, val lado3: Double,color: String): Figura(color) {
+class Triangulo(val base: Double, val altura: Double, val lado1: Double, val lado2: Double, color: String): Figura(color) {
 
     override fun area(): Double {
         val area = (base * altura) / 2
@@ -6,7 +6,7 @@ class Triangulo(val base: Double, val altura: Double, val lado1: Double, val lad
     }
 
     override fun perimetro(): Double {
-        val peri = lado1 + lado2 + lado3
+        val peri = lado1 + lado2 + base
         return peri
     }
 
